@@ -352,13 +352,29 @@ article img{
     background: linear-gradient(to bottom right, whitesmoke, grey);;
 }
 
-.rounded img{
+/*.rounded img{
     border-radius: 50%;
+    height: 20vw;
+    width: 18vw;
+    margin-top: 5%;
+}*/
+
+#tutorImg{
+  border-radius: 50%;
     height: 20vw;
     width: 18vw;
     margin-left: 45%;
     margin-top: 5%;
 }
+
+#finalImg{
+  border-radius: 50%;
+    height: 20vw;
+    width: 18vw;
+    margin-top: 5%;
+}
+
+
 
 a {
     color: #f1c40f;
@@ -417,5 +433,6 @@ a:focus {
 }
 #divProfile{
   margin-top: 80px;
+  margin-right: 0px;
 }
 
