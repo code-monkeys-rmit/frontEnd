@@ -25,7 +25,7 @@ body{
 footer{
   position: relative;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   color: white;
   background-color: #2C3E50;
   border-left: 50px solid #C0392B;
