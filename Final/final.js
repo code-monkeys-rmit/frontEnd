@@ -140,10 +140,10 @@ $(document).ready(()=>{
     let cook = JSON.parse(readCookie('tutorLink'));
     let tutorID = cook.tutor.tutorID;
     let courseID = cook.course_id;
-    let linkedInID = cook.linked;
+    let linkedInID = cook.tutor.tutor.linkedin_ID;
     $('#linkdIn').attr('href','https://linkedin.com/in/'+linkedInID);
     $('#done').click(()=>{
-        $.post(URL,'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
+        $.post("http://localhost:3000",'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
             document.location.replace('../index.html');
         },'jsonp')
     });
