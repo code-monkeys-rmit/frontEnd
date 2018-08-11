@@ -16,6 +16,7 @@ footer {
     color: white;
     background-color: #2C3E50;
     border-left: 50px solid #C0392B;
+    border-right: 50px solid #C0392B;
     transition: all 1.5s;
     padding: 5px;
     text-align: center;
@@ -66,14 +67,14 @@ footer p{
 } */
 
 form{
-	position: relative;
-	margin-top:20px;
+  position: relative;
+  margin-top:20px;
 }
 
 input{
-	width: 50%;
-	padding: 10px;
-	font-size: 14pt;
+  width: 50%;
+  padding: 10px;
+  font-size: 14pt;
 
 }
 
@@ -83,9 +84,9 @@ input:focus {
 }
 
 label{
-	font-size: 14pt;
-	text-align: center;
-	font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: bold;
     margin-top: 15px;
 }
 
@@ -114,7 +115,7 @@ textarea {
   text-align: center;
   font-size: 17px;
   padding: 5px;
-  width: 10%;
+  width: 13%;
   transition: all 0.5s;
   cursor: pointer;
   margin-left: 45%;
@@ -133,7 +134,7 @@ textarea {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -50px;
   transition: 0.5s;
 }
 
@@ -146,6 +147,10 @@ textarea {
   right: 0;
 }
 
+#matchContainer p{
+  margin-top: 15px;
+  font-size: 18px;
+}
 #search{
   color: white;
   background-color: #2C3E50;
@@ -332,7 +337,7 @@ article img{
     background: linear-gradient(to bottom right, whitesmoke, grey);;
 }
 
-.rounded{
+.rounded img{
     border-radius: 50%;
     height: 20vw;
     width: 20vw;
@@ -380,4 +385,10 @@ a:focus {
     width: 70%;
 }
 
+
+#btnSkype{
+  background: url('media/btnSkype.png') no-repeat;
+  cursor:pointer;
+  border: none;
+}
 

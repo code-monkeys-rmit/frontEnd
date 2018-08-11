@@ -7,6 +7,9 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -43,17 +46,21 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-	<div class="container">
+	<div id="matchContainer" class="container">
 		<h3 class="bg-success" align="center">Matching successfully !</h3>
 		<p align="center">Click here to get into the world where student and tutor are connected !</p>
 		<div id="skype" class="skype-chat">	
 
 		</div>
-		<button id="btnSkype" class="skype-button btn btn-primary amazingButton" 	data-contact-id="user_name"><span>Skype </span></button>
+		<button class="skype-button btn btn-primary amazingButton" 	data-contact-id="user_name"><span id="btnSkype">Skype <i class="fab fa-skype"></i>
+
+</span></button>
 
 		<p align="center">Ending your session before levaving. Thanks ^^ !</p>
-		<button class="btn btn-warning amazingButton"><span>Exit </span></button>
+		<button class="btn btn-warning amazingButton" ><span>End session </span></button>
 	</div>
+
+
 
 	<footer>
       <p><b>Code Monkeys Team</b></p>
