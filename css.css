@@ -49,14 +49,14 @@ footer p{
 } */
 
 form{
-	position: relative;
-	margin-top:20px;
+  position: relative;
+  margin-top:20px;
 }
 
 input{
-	width: 50%;
-	padding: 10px;
-	font-size: 14pt;
+  width: 50%;
+  padding: 10px;
+  font-size: 14pt;
 
 }
 
@@ -66,9 +66,9 @@ input:focus {
 }
 
 label{
-	font-size: 14pt;
-	text-align: center;
-	font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: bold;
     margin-top: 15px;
 }
 
