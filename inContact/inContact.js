@@ -13,4 +13,4 @@ $(document).ready(()=>{
     $('#done').click(()=>{
         $.get('/api/done/'+sessionID)
     });
-})
+});
