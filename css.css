@@ -259,9 +259,9 @@ textarea {
     box-shadow: 5px 10px 25px 5px rgba(0,0,0,0.3);
     background-color: limegreen;
     margin-left: 35%;
-    margin-top: 10%;
-    width: 20vw;
-    height: 20vw;
+    margin-top: 03%;
+    width: 15vw;
+    height: 15vw;
 }
 
 #ButnCont #btnText{
@@ -340,7 +340,7 @@ article img{
 .rounded img{
     border-radius: 50%;
     height: 20vw;
-    width: 20vw;
+    width: 18vw;
 }
 
 a {
@@ -395,5 +395,7 @@ a:focus {
   margin-right: 5px;
 }
 
-
+#headCont{
+    background-color: #EEEEEE;
+}
 
