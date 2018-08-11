@@ -137,6 +137,7 @@ jQuery.fn.ratingStars = function( options ) {
     });
 };
 $(document).ready(()=>{
+    footerAlign();
     let cook = JSON.parse(readCookie('tutorLink'));
     console.log(cook);
     let tutorID = cook.chat_session.tutor_id;
