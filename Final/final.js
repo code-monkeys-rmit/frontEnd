@@ -117,3 +117,10 @@ jQuery.fn.ratingStars = function( options ) {
         methods.init($(this));
     });
 };
+$(document).ready(()=>{
+    $('#done').click(()=>{
+        $.get(URL,(data)=>{
+            document.location.replace('../index.html');
+        })
+    });
+});
