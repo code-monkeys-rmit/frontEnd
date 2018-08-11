@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Tuber
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--Bootstrap integration-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <!--JS integration-->
+     <script src="tutorPost.js"></script>
+     <!--My CSS links-->
+     <link rel="stylesheet" type="text/css" media="screen" href="../css.css" />
+    <script src="main.js"></script>
+    
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="D:\Web Programming\Tuber\media\RMIT-logo.png" height="30px"</a>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                      <li><a href="#">Tutor <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">My account</a></li>
+                      
+                    </ul>
+                    
+                    
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+   
+              
+              <div>
+                  <!--Js animation!-->
+              </div>
+
+              
+      <h1 id="tutHead">Hit the big green ugly button to start teaching!</h1>
+
+      <!-- Small modal -->
+      <div class="container" id="ButnCont">
+<button type="button" onclick="style.display = 'none'" class="btn btn-primary pulse" id="bigButn" data-toggle="modal" data-target=".bd-example-modal-sm"><p id="btnText">Go online</p></button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Searching for students needing your help!
+      <div class="loader">
+        <!--JS animation-->
+      </div>
+    </div>
+  </div>
+</div>
+      </div> <!--End of ButnCont-->
+      
+      <!-- Modal 
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">A student needs your help!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Accept!</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Decline</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Go busy</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+              </div>
+            -->
+              <!--Modal trigger script-->
+
+
+              <footer>
+                    <div class="container">
+                  &copy; Code Monkeys 2018
+                  <p>Nathan,TJ,Rob,Stephan,Abir</p>
+                  </div>
+                </footer>
+                
+                <!--
+              <script>
+                    $('#myModal').on('shown.bs.modal', function () {
+              $('#myInput').trigger('focus')
+            })
+                </script>-->
+
+                <!--Buttn disappear
+                <script>
+                    function hide() {
+    var div = document.getElementyById('buttonB');
+    div.style.display = 'none';
+}
+                </script>-->
+                <!--jQuery and Bootstrap.js-->	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+</body>
+</html>
