@@ -1,6 +1,7 @@
 
 body{
     background-color:white;
+    overflow-x: hidden;
 }
 html {
     position: relative;
@@ -255,13 +256,13 @@ textarea {
 
  #bigButn{
     border-radius: 70%;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 5px 10px 25px 5px rgba(0,0,0,0.3);
     background-color: limegreen;
-    margin-left: 35%;
-    margin-top: 03%;
-    width: 15vw;
-    height: 15vw;
+    margin-top:1%; 
+    margin-right: 65%;
+    width: 12vw;
+    height: 12vw;
    
     
    

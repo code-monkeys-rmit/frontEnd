@@ -126,6 +126,7 @@ jQuery.fn.ratingStars = function( options ) {
     });
 };
 $(document).ready(()=>{
+    footerAlign();
     $('#done').click(()=>{
         $.get(URL,(data)=>{
             document.location.replace('../index.html');
