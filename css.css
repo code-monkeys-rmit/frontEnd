@@ -349,7 +349,7 @@ article img{
 }
 
 .finalBody{
-    background: linear-gradient(to bottom right, whitesmoke, grey);;
+    background-color: whitesmoke;
 }
 
 /*.rounded img{
