@@ -5,28 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap integration-->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>  
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- FontAwesome core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+ 
+    </style>
+ <!--My CSS links-->
  <link rel="stylesheet" type="text/css" media="screen" href="../css.css" />
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <div class="container" id="firstCont">
             <h1>Rate your tutor (anonymously)</h1>
-        <div class="imgDiv">
-            <img src="../media/ghost.jpg">
-        </div>
-        <div id="rateYo"></div>
- 
-  <script src="jquery.js"></script>
-  <script src="jquery.rateyo.js"></script>
-</body>
-    </div> <!--E of firstCont-->
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <img src="../media/ghost.jpg" class="rounded" >
+    
+    
+        
+            <div class="position-relative overflow-hidden p-3 p-md-6 m-md-3 text-center bg-light">
+                
+        
+                <div class="col-md-5 p-lg-5 mx-auto my-5">
+                    
+                    <div class="rating-stars block">
+                        <input type="number" readonly="readonly" class="form-control rating-value" name="rating-stars-value" id="rating-stars-value">
+                        <div class="rating-stars-container">
+                            <div class="rating-star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="rating-star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="rating-star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="rating-star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="rating-star">
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/nathan-williams-a22903123" data-format="inline" data-related="false"></script>
+                </div>
+            </div>
+        
+          
+
+
+          
+        </div> <!--E of firstCont-->
+  <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script>
+                window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+        
+            <script src="final.js"></script>
+            <script>
+                var ratingOptions = {
+                    selectors: {
+                        starsSelector: '.rating-stars',
+                        starSelector: '.rating-star',
+                        starActiveClass: 'is--active',
+                        starHoverClass: 'is--hover',
+                        starNoHoverClass: 'is--no-hover',
+                        targetFormElementSelector: '.rating-value'
+                    }
+                };
+        
+                $(".rating-stars").ratingStars(ratingOptions);
+        
+                $(".rating-stars").on("ratingChanged", function (ev, data) {
+                    $("#ratingChanged").html(data.ratingValue);
+                });
+        
+                $(".rating-stars").on("ratingOnEnter", function (ev, data) {
+                    $("#ratingOnEnter").html(data.ratingValue);
+                });
+        
+                $(".rating-stars").on("ratingOnLeave", function (ev, data) {
+                    $("#ratingOnLeave").html(data.ratingValue);
+                });
+            </script>
+         <script src="final.js"></script>
 </body>
 </html>
