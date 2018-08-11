@@ -9,17 +9,15 @@ function readCookie(name) {
 	return null;
 }
 $(document).ready(()=>{
-	let cook = JSON.parse(readCookie(tutorLink));
+	/*let cook = JSON.parse(readCookie('tutorLink'));
 	let name = cook.name;
 	let skype_id = cook.user.skype_user;
 	let sessionID = cook.chat_session.id;
-	$('#userName').html(name);
-	$('#skypeCall').data('contact-id',skype_id);
+	$('#userName').html('name');
+	$('#skypeCall').data('contact-id',skype_id);*/
     $('#done').click(()=>{
-        $.get('/api/done/'+sessionID,(data)=>{
-			if (data.confirm == 'true'){
-				document.location.replace('../final/final.html');
-			}
-		})
+        $.post('http://localhost:3000/api/end_session','id=28',(data)=>{
+            document.location.replace('../final/final.html');
+		},'jsonp')
     });
 });
