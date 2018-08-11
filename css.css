@@ -2,7 +2,24 @@
 body{
     background-color:white;
 }
-
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    display:none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: #2C3E50;
+    border-left: 50px solid #C0392B;
+    transition: all 1.5s;
+    padding: 5px;
+    text-align: center;
+}
 .navbar-default .navbar-nav>li>a{
     color: black;
     font-weight: bold;
@@ -21,7 +38,7 @@ body{
     transition: .1s ease-in;
     border-bottom: 5px solid navy;
 }
-
+/* 
 footer{
   position: absolute;
   width: 100%;
@@ -35,7 +52,7 @@ footer{
   margin-top: 100px;
 }
 
-/* footer{
+footer{
     background-color: #2C3E50 ;
     position: absolute;
   bottom: 0;
@@ -82,6 +99,51 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+}
+
+.amazingButton{
+  font-size: 14pt;
+}
+
+.amazingButton {
+  display: inline-block;
+  border-radius: 4px;
+/*  background-color: #2C3E50;
+*/  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  width: 10%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.amazingButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.amazingButton span:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.amazingButton:hover span {
+  padding-right: 25px;
+}
+
+.amazingButton:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #search{
@@ -311,4 +373,11 @@ a:focus {
 .rating-stars .rating-stars-container .rating-star.is--no-hover {
     color: #555555;
 }
+#contentWrapper{
+    margin-top: 5%;
+}
+#desc{
+    width: 70%;
+}
+
 
