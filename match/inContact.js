@@ -9,8 +9,15 @@ function readCookie(name) {
 	return null;
 }
 $(document).ready(()=>{
-    let cook = readCookie(tutorLink);
+	let cook = JSON.parse(readCookie(tutorLink));
+	let name = 'x';
+	let skype_id = 'y';
+	let sessionID = '1';
     $('#done').click(()=>{
-        $.get('/api/done/'+sessionID)
+        $.get('/api/done/'+sessionID,(data)=>{
+			if (data.confirm == 'true'){
+				document.location.replace('../final/final.html');
+			}
+		})
     });
 });
