@@ -30,11 +30,13 @@ $(document).ready(()=>{
 	$('#search').click(()=>{
 	    let popUp = "<div class='popup'><h2 id='statusText'>Searching for your tutor</h2><div class='loader'>Loading...</div></div>";
 		$('#contentWrapper').append(popUp);
-		$.post('/api/reqPost',($('#userform').serialize() + '&student_id=3'),(data)=>{
-			$('#statusText').html('Tutor Found!<br>Redirecting...');
-			createCookie(tutorLink, data);
-			setTimeout(()=>{document.location.replace('redirect.html') }, 3000);
-		})
+		$.post('http://localhost:3000/api/create_session',($('#userform').serialize() + '&student_id=3'),(data)=>{
+            let parseData = JSON.parse(JSON.stringify(data));
+			/*$('#statusText').html('Tutor Found!<br>Redirecting...');
+			createCookie('tutorLink', data.toString());*/
+            console.log(parseData);
+			setTimeout(()=>{document.location.replace('redirect.html') }, 30000);
+		},'jsonp')
 	});
 });
 
