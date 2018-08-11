@@ -34,8 +34,8 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
              <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-              <li><a href="TutorPortal/TutorPortal.html">Tutor <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">My account</a></li>
+              <li><a href="TutorPortal/TutorPortal.html"><span class="glyphicon glyphicon-education" aria-hidden='true'></span>Tutor Dashboard</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden='true'></span>My account</a></li>
               
             </ul>
             
@@ -52,17 +52,15 @@
  -->		<form id="userform">
 			    <div>
 			      <label for="course_name">Your course name:</label><br>
-			        <input type="text"  id="course_name" placeholder="Enter course name" name="course_name" required="true">
+              <select id="course_name" placeholder="Enter course name" name="course_name" required="true">
+                <option value='math'>Math</option>
+                <option value='history'>History</option>    
+              </select>
 			    </div>
 			   
 			    <div>
-			      <label for="description">Description:</label><br>
-			       <textarea rows="4" cols="50" name="description" form="usrform"></textarea>
-			    </div>
-
-			    <div align="center">
-			      <label  for="fileUpload" align="center">Screenshot:</label>	
-			        <input type="file" id="fileUpload" name="fileUpload">
+			      <label for="describe your problem">Description:</label><br>
+			       <textarea rows="4" cols="50" name="description" form="userform" id='desc'></textarea>
 			    </div>
 
 			    <div>        

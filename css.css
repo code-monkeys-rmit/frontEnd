@@ -2,7 +2,24 @@
 body{
     background-color:white;
 }
-
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    display:none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: #2C3E50;
+    border-left: 50px solid #C0392B;
+    transition: all 1.5s;
+    padding: 5px;
+    text-align: center;
+}
 .navbar-default .navbar-nav>li>a{
     color: black;
     font-weight: bold;
@@ -21,7 +38,7 @@ body{
     transition: .1s ease-in;
     border-bottom: 5px solid navy;
 }
-
+/* 
 footer{
   position: absolute;
   width: 100%;
@@ -35,7 +52,7 @@ footer{
   margin-top: 100px;
 }
 
-/* footer{
+footer{
     background-color: #2C3E50 ;
     position: absolute;
   bottom: 0;
@@ -355,6 +372,12 @@ a:focus {
 
 .rating-stars .rating-stars-container .rating-star.is--no-hover {
     color: #555555;
+}
+#contentWrapper{
+    margin-top: 5%;
+}
+#desc{
+    width: 70%;
 }
 
 
