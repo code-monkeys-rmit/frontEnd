@@ -9,14 +9,15 @@ function readCookie(name) {
 	return null;
 }
 $(document).ready(()=>{
-	let cook = JSON.parse(readCookie(tutorLink));
-	let name = cook.name;
-	let skype_id = cook.user.skype_user;
+	let cook = JSON.parse(readCookie('tutorLink'));
+	let name = cook.tutor.user.name;
+    console.log(cook);
+	let skype_id = cook.tutor.user.skype_user;
 	let sessionID = cook.chat_session.id;
 	$('#userName').html(name);
 	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
-        $.post('/api/end_session','id='+sessionID,(data)=>{
+        $.post('http://localhost:3000/api/end_session','id='+sessionID,(data)=>{
 			document.location.replace('../final/final.html');
 		},'jsonp')
     });
