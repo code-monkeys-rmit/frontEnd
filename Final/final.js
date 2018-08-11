@@ -1,6 +1,17 @@
 var teachRating;
 var knowledgeRating;
 
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
 function footerAlign() {
 	$("footer").css("display", "block");
 	$("footer").css("height", "auto");
@@ -126,10 +137,16 @@ jQuery.fn.ratingStars = function( options ) {
     });
 };
 $(document).ready(()=>{
+<<<<<<< HEAD
     footerAlign();
+=======
+    let cook = JSON.parse(readCookie('tutorLink'));
+    let tutorID = cook.tutor.tutorID;
+    let courseID = cook.course;
+>>>>>>> b4565ef01645391cb5551cd3494f6c54dae0f299
     $('#done').click(()=>{
-        $.get(URL,(data)=>{
+        $.post(URL,'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+knowledgeRating,(data)=>{
             document.location.replace('../index.html');
-        })
+        },'jsonp')
     });
 });
