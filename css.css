@@ -310,6 +310,10 @@ article img{
     background-color: whitesmoke;
 }
 
+.finalBody{
+    background: linear-gradient(#555555, grey);;
+}
+
 .rounded{
     border-radius: 50%;
     height: 20vw;
