@@ -137,15 +137,13 @@ jQuery.fn.ratingStars = function( options ) {
     });
 };
 $(document).ready(()=>{
-<<<<<<< HEAD
-    footerAlign();
-=======
     let cook = JSON.parse(readCookie('tutorLink'));
     let tutorID = cook.tutor.tutorID;
-    let courseID = cook.course;
->>>>>>> b4565ef01645391cb5551cd3494f6c54dae0f299
+    let courseID = cook.course_id;
+    let linkedInID = cook.linked;
+    $('#linkdIn').attr('href','https://linkedin.com/in/'+linkedInID);
     $('#done').click(()=>{
-        $.post(URL,'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+knowledgeRating,(data)=>{
+        $.post(URL,'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
             document.location.replace('../index.html');
         },'jsonp')
     });
