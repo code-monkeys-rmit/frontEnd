@@ -17,7 +17,7 @@ $(document).ready(()=>{
 	$('#userName').html(name);
 	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
-        $.post('http://localhost:3000/api/end_session','id='+sessionID,(data)=>{
+        $.post('http://backend-dev.ap-southeast-2.elasticbeanstalk.com/api/end_session','id='+sessionID,(data)=>{
 			document.location.replace('../final/final.html');
 		},'jsonp')
     });

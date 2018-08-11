@@ -143,7 +143,7 @@ $(document).ready(()=>{
     let linkedInID = cook.tutor.tutor.linkedin_ID;
     $('#linkdIn').attr('href','https://linkedin.com/in/'+linkedInID);
     $('#done').click(()=>{
-        $.post("http://localhost:3000/api/tutors/"+tutorID+"/rate",'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
+        $.post("http://backend-dev.ap-southeast-2.elasticbeanstalk.com/api/tutors/"+tutorID+"/rate",'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
             document.location.replace('../index.html');
         },'jsonp')
     });
