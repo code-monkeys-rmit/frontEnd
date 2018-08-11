@@ -259,8 +259,9 @@ textarea {
     box-shadow: 5px 10px 25px 5px rgba(0,0,0,0.3);
     background-color: limegreen;
     margin-left: 35%;
-    margin-top: 10%;
-    width: 20vw;
+    margin-right: 35%;
+    margin-top: 5%;
+    width: 30%;
     height: 20vw;
 }
 
