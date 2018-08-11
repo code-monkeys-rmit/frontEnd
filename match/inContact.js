@@ -10,9 +10,11 @@ function readCookie(name) {
 }
 $(document).ready(()=>{
 	let cook = JSON.parse(readCookie(tutorLink));
-	let name = 'x';
-	let skype_id = 'y';
-	let sessionID = '1';
+	let name = cook.name;
+	let skype_id = cook.user.skype_user;
+	let sessionID = cook.chat_session.id;
+	$('#userName').html(name);
+	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
         $.get('/api/done/'+sessionID,(data)=>{
 			if (data.confirm == 'true'){
