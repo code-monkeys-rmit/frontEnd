@@ -26,7 +26,7 @@ $(document).ready(()=>{
 		$.post('/api/reqPost',$('#userform').serialize(),(data)=>{
 			$('#statusText').html('Tutor Found!<br>Redirecting...');
 			createCookie(tutorLink, data);
-			setTimeout(()=>{window.location.replace('redirect.html') }, 3000);
+			setTimeout(()=>{document.location.replace('redirect.html') }, 3000);
 		})
 	});
 });
