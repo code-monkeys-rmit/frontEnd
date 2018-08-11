@@ -23,6 +23,19 @@ body{
 }
 
 footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  color: white;
+  background-color: #2C3E50;
+  border-left: 50px solid #C0392B;
+  transition: all 1.5s;
+  padding: 5px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*footer{
     background-color: whitesmoke;
     position: absolute;
   bottom: 0;
@@ -32,7 +45,7 @@ footer{
 
 footer p{
     text-align: right;
-}
+}*/
 
 form{
 	position: relative;
@@ -47,13 +60,13 @@ input{
 }
 
 input:focus {
-    background-color: #2C3E50;
-    color: white;
+/*    background-color: #2C3E50;
+*/    color: black;
 }
 
 label{
 	font-size: 14pt;
-	text-align: left;
+	text-align: center;
 	font-weight: bold;
     margin-top: 15px;
 }
@@ -115,6 +128,17 @@ button:hover span:after {
   right: 0;
 }
 
+#search{
+  color: white;
+  background-color: #2C3E50;
+  margin-top: 20px;
+}
+#fileUpload{
+  display: inline-block;
+  font-size: 12pt;
+  width: 30%;
+  margin-right: -5%;
+}
 
 .popup{
     position: fixed;

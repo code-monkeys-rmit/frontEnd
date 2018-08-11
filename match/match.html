@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="../css.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -16,9 +16,35 @@
 </head>
 
 <body>
-	
+	<nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><img src="../media/RMIT-logo.png" height="30px"</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+             <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+              <li><a href="../TutorPortal/TutorPortal.html">Tutor <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">My account</a></li>
+              
+            </ul>
+            
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
 	<div class="container">
-		<h4 class="bg-success" align="center">Matching successfully !</h4>
+		<h3 class="bg-success" align="center">Matching successfully !</h3>
 		<p align="center">Click here to get into the world where student and tutor are connected !</p>
 		<div id="skype" class="skype-chat fullscreen">	
 
@@ -29,6 +55,10 @@
 		<button class="btn btn-warning"><span>Exit </span></button>
 	</div>
 
-
+	<footer>
+      <p><b>Code Monkeys Team</b></p>
+      <p>Nathan,TJ,Rob,Stephan,Abir</p>
+      <p>&copy;2018</p>
+  </footer>
 </body>
 </html>
