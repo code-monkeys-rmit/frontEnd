@@ -174,7 +174,7 @@ textarea {
     top: 30%;
     text-align: center;
     padding: 20px;
-    background-color: limegreen; 
+    background-color: #2C3E50; 
 }
 
 .loader {
@@ -208,7 +208,7 @@ textarea {
  content: '';
 }
 .loader:after {
- background-color: limegreen;
+ background-color: #2C3E50;
  width: 75%;
  height: 75%;
  border-radius: 50%;
@@ -384,6 +384,16 @@ a:hover,
 a:active,
 a:focus {
     color: #dab10d;
+}
+.greyBack{
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.2);
+  top: 0;
+  left: 0;
+  color: white;
 }
 
 .rating-stars {

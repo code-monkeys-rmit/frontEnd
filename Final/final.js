@@ -1,5 +1,5 @@
-var teachRating;
-var knowledgeRating;
+var teachRating = 1;
+var knowledgeRating = 1;
 
 function readCookie(name) {
 	var nameEQ = name + "=";
