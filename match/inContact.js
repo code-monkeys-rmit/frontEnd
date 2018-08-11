@@ -17,9 +17,7 @@ $(document).ready(()=>{
 	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
         $.get('/api/done/'+sessionID,(data)=>{
-			if (data.confirm == 'true'){
-				document.location.replace('../final/final.html');
-			}
+			document.location.replace('../final/final.html');
 		})
     });
 });
