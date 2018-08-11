@@ -1,5 +1,6 @@
 const reqID = null;
 const userID = 12353;
+
 $('#ready').click(()=>{
     let UserID = 189213;
     let postURL = '/api/tutorReady/'+userID;
@@ -25,3 +26,23 @@ $('#accept').click(()=>{
 $('#decline').click(()=>{
     $('#reqPopup').remove();
 });
+
+$(function(){
+
+    $("#bigButn").click(function(event) {
+        $(this).prop("disabled", true);
+        $("#tutHead").hide('slow/400/fast', function() {
+          
+        });
+        var txtSearch = '<h3 class="text-primary">Searching for student...</h3>';
+        var imgSearch = '<img id="imgloading" src="../media/loading.gif" height="80" width="80" align="center">';
+        var txtWarning = '<h3 class="text-warning">Please do not close this window</h3>'
+        $("#divImgLoading").append(txtSearch+imgSearch+txtWarning);
+    });
+});
+
+function onSearchingEnd(){
+        var txtSearch = '<h3 class="text-primary">Searching for student...</h3>';
+        var imgSearch = '<img id="imgloading" src="../media/loading.gif" height="80" width="80" align="center">';
+        $("#divImgLoading").prepend(txtSearch+imgSearch);
+}

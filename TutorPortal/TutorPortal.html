@@ -10,6 +10,7 @@
      <!--Bootstrap integration-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <!--JS integration-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src="tutorPost.js"></script>
      <!--My CSS links-->
      <link rel="stylesheet" type="text/css" media="screen" href="../css.css" />
@@ -49,14 +50,23 @@
                   <!--Js animation!-->
               </div>
 
-              
-      <h1 id="tutHead">Hit the big green ugly button to start teaching!</h1>
 
+    <div class="container" align="center">
+      <h1 id="tutHead">Hit the big green ugly button to start teaching!</h1>
+<!--       <button id="btnGoOnline" class="btn btn-primary"="">Go online!</button>
+ -->      <div id="divImgLoading" align="center">
+                <!-- <img id="imgloading" src="../media/loading.gif" height="80" width="80" align="center"> -->
+                
+      </div>
+
+    </div>
+              
+      
       <!-- Small modal -->
       <div class="container" id="ButnCont">
           <button type="button" onclick="style.display = 'none'" class="btn btn-primary pulse" id="bigButn" data-toggle="modal" data-target=".bd-example-modal-sm"><p id="btnText">Go online</p></button>
 
-          <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <!-- <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
                 Searching for students needing your help!
@@ -65,7 +75,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
       </div> <!--End of ButnCont-->
       
       <!-- Modal 
