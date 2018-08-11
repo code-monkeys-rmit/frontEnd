@@ -49,7 +49,7 @@ jQuery.fn.ratingStars = function( options ) {
 
         onStarEnter: function(starElement, container) {
             var me = this;
-            // var elementIndex = $(starElement).index();
+             var elementIndex = $(starElement).index();
      if(container[0].id === teach){
         teachRating=elementIndex;
      }else if(container[0].id === knowledge){
