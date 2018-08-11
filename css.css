@@ -259,16 +259,13 @@ textarea {
     box-shadow: 5px 10px 25px 5px rgba(0,0,0,0.3);
     background-color: limegreen;
     margin-left: 35%;
-<<<<<<< HEAD
     margin-top: 03%;
     width: 15vw;
     height: 15vw;
-=======
-    margin-right: 35%;
-    margin-top: 5%;
-    width: 30%;
-    height: 20vw;
->>>>>>> 678c3679b708120d775469a73b3de977f53205a4
+   
+    
+   
+    
 }
 
 #ButnCont #btnText{
@@ -402,12 +399,9 @@ a:focus {
   margin-right: 5px;
 }
 
-<<<<<<< HEAD
 #headCont{
     background-color: #EEEEEE;
-=======
 #divProfile{
   margin-top: 80px;
->>>>>>> 678c3679b708120d775469a73b3de977f53205a4
 }
 

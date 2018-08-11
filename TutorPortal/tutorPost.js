@@ -1,6 +1,14 @@
 const reqID = null;
 const userID = 12353;
 
+function footerAlign() {
+	$("footer").css("display", "block");
+	$("footer").css("height", "auto");
+	var footerHeight = $("footer").outerHeight();
+	$("body").css("padding-bottom", footerHeight);
+	$("footer").css("height", footerHeight);
+}
+
 $('#ready').click(()=>{
     let UserID = 189213;
     let postURL = '/api/tutorReady/'+userID;
@@ -46,3 +54,7 @@ function onSearchingEnd(){
         var imgSearch = '<img id="imgloading" src="../media/loading.gif" height="80" width="80" align="center">';
         $("#divImgLoading").prepend(txtSearch+imgSearch);
 }
+
+$(document).ready(()=>{
+    footerAlign();
+})

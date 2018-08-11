@@ -8,8 +8,19 @@ function readCookie(name) {
 	}
 	return null;
 }
+
+function footerAlign() {
+	$("footer").css("display", "block");
+	$("footer").css("height", "auto");
+	var footerHeight = $("footer").outerHeight();
+	$("body").css("padding-bottom", footerHeight);
+	$("footer").css("height", footerHeight);
+}
+
 $(document).ready(()=>{
-	/*let cook = JSON.parse(readCookie('tutorLink'));
+
+	footerAlign();
+	let cook = JSON.parse(readCookie(tutorLink));
 	let name = cook.name;
 	let skype_id = cook.user.skype_user;
 	let sessionID = cook.chat_session.id;
