@@ -16,6 +16,7 @@ footer {
     color: white;
     background-color: #2C3E50;
     border-left: 50px solid #C0392B;
+    border-right: 50px solid #C0392B;
     transition: all 1.5s;
     padding: 5px;
     text-align: center;
