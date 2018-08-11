@@ -385,10 +385,13 @@ a:focus {
     width: 70%;
 }
 
-
 #btnSkype{
   background: url('media/btnSkype.png') no-repeat;
   cursor:pointer;
   border: none;
+}
+
+.glyphicon{
+  margin-right: 5px;
 }
 
