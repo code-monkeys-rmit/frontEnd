@@ -115,7 +115,7 @@ textarea {
   text-align: center;
   font-size: 17px;
   padding: 5px;
-  width: 10%;
+  width: 13%;
   transition: all 0.5s;
   cursor: pointer;
   margin-left: 45%;
@@ -134,7 +134,7 @@ textarea {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -50px;
   transition: 0.5s;
 }
 
@@ -147,6 +147,10 @@ textarea {
   right: 0;
 }
 
+#matchContainer p{
+  margin-top: 15px;
+  font-size: 18px;
+}
 #search{
   color: white;
   background-color: #2C3E50;
@@ -381,4 +385,10 @@ a:focus {
     width: 70%;
 }
 
+
+#btnSkype{
+  background: url('media/btnSkype.png') no-repeat;
+  cursor:pointer;
+  border: none;
+}
 
