@@ -20,9 +20,9 @@ function footerAlign() {
 $(document).ready(()=>{
 	footerAlign();
 	let cook = JSON.parse(readCookie('tutorLink'));
+	console.log(cook);
 	let name = cook.tutor.user.name;
-    console.log(cook);
-	let skype_id = cook.tutor.user.skype_user;
+	let skype_id = 'abir.ishtiaque';
 	let sessionID = cook.chat_session.id;
 	$('#userName').html(name);
 	$('#skypeCall').data('contact-id',skype_id);

@@ -139,12 +139,16 @@ jQuery.fn.ratingStars = function( options ) {
 $(document).ready(()=>{
     footerAlign();
     let cook = JSON.parse(readCookie('tutorLink'));
-    let tutorID = cook.tutor.tutorID;
+    console.log(cook);
+    let tutorID = cook.chat_session.tutor_id;
+    console.log(tutorID);
     let courseID = cook.course_id;
-    let linkedInID = cook.tutor.tutor.linkedin_ID;
+    console.log(courseID);
+    let linkedInID = 'nathan-williams-a22903123/';
     $('#linkdIn').attr('href','https://linkedin.com/in/'+linkedInID);
     $('#done').click(()=>{
-        $.post("http://backend-dev.ap-southeast-2.elasticbeanstalk.com/api/tutors/"+tutorID+"/rate",'tutor_rate='+(teachRating+1)+'&course_ID='+courseID+'course_rate='+(knowledgeRating+1),(data)=>{
+        console.log('clicked');
+        $.post("http://backend-dev.ap-southeast-2.elasticbeanstalk.com/api/tutors/"+tutorID+"/rate",'tutor_rate='+(teachRating+1)+'&course_id='+courseID+'&course_rate='+(knowledgeRating+1),(data)=>{
             document.location.replace('../index.html');
         },'jsonp')
     });
