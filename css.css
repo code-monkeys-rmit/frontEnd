@@ -83,51 +83,6 @@ textarea {
     resize: none;
 }
 
-button{
-	font-size: 14pt;
-}
-
-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #2C3E50;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 17px;
-  padding: 20px;
-  width: 10%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-left: 45%;
-  margin-right: 45%;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-button span:after {
-  content: ">>";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 #search{
   color: white;
   background-color: #2C3E50;
@@ -311,7 +266,7 @@ article img{
 }
 
 .finalBody{
-    background: linear-gradient(#555555, grey);;
+    background: linear-gradient(to bottom right, whitesmoke, grey);;
 }
 
 .rounded{
@@ -354,3 +309,5 @@ a:focus {
 
 .rating-stars .rating-stars-container .rating-star.is--no-hover {
     color: #555555;
+}
+
