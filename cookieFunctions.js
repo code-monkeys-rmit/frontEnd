@@ -19,15 +19,6 @@ function readCookie(name) {
 	return null;
 }
 
-$(document).ready(()=>{
-	$('#search').click(()=>{
-	    let popUp = "<div class='popup'><h2 id='statusText'>Searching for your tutor</h2><div class='loader'>Loading...</div></div>";
-		$('#contentWrapper').append(popUp);
-		$.post('/api/reqPost',$('#userform').serialize(),(data)=>{
-			$('#statusText').html('Tutor Found!<br>Redirecting...');
-			createCookie(tutorLink, data);
-			setTimeout(()=>{document.location.replace('redirect.html') }, 3000);
-		})
-	});
-});
-
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
