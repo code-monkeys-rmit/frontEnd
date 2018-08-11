@@ -8,17 +8,7 @@ function readCookie(name) {
 	}
 	return null;
 }
-
-function footerAlign() {
-	$("footer").css("display", "block");
-	$("footer").css("height", "auto");
-	var footerHeight = $("footer").outerHeight();
-	$("body").css("padding-bottom", footerHeight);
-	$("footer").css("height", footerHeight);
-}
-
 $(document).ready(()=>{
-	footerAlign();
 	let cook = JSON.parse(readCookie(tutorLink));
 	let name = cook.name;
 	let skype_id = cook.user.skype_user;
@@ -26,10 +16,8 @@ $(document).ready(()=>{
 	$('#userName').html(name);
 	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
-        $.get('/api/done/'+sessionID,(data)=>{
-			if (data.confirm == 'true'){
-				document.location.replace('../final/final.html');
-			}
-		})
+        $.post('/api/end_session','id='+sessionID,(data)=>{
+			document.location.replace('../final/final.html');
+		},'jsonp')
     });
 });

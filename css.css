@@ -17,8 +17,8 @@ footer {
     color: white;
     background-color: #2C3E50;
     border-left: 50px solid #C0392B;
-    border-right: 50px solid #C0392B;
-    transition: all 1.5s;
+/*    border-right: 50px solid #C0392B;
+*/    transition: all 1.5s;
     padding: 5px;
     text-align: center;
 }
@@ -266,6 +266,16 @@ textarea {
    
     
    
+    background-color: #2C3E50;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    margin-top: 03%;
+    border: 25px;
+    margin-bottom: 5%;
+    width: 25%;
+    height: 15vw;
+    font-size: 20pt;
+    color: white;
     
 }
 
@@ -346,6 +356,8 @@ article img{
     border-radius: 50%;
     height: 20vw;
     width: 18vw;
+    margin-left: 45%;
+    margin-top: 5%;
 }
 
 a {
