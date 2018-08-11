@@ -270,7 +270,7 @@ article img{
     background: linear-gradient(to bottom right, whitesmoke, grey);;
 }
 
-.rounded{
+.rounded img{
     border-radius: 50%;
     height: 20vw;
     width: 20vw;
@@ -311,3 +311,4 @@ a:focus {
 .rating-stars .rating-stars-container .rating-star.is--no-hover {
     color: #555555;
 }
+
