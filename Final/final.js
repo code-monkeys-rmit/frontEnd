@@ -1,3 +1,6 @@
+var teachRating;
+var knowledgeRating;
+
 jQuery.fn.ratingStars = function( options ) {
  
     var defaults = {
@@ -46,8 +49,12 @@ jQuery.fn.ratingStars = function( options ) {
 
         onStarEnter: function(starElement, container) {
             var me = this;
-            var elementIndex = $(starElement).index();
-    
+            // var elementIndex = $(starElement).index();
+     if(container[0].id === teach){
+        teachRating=elementIndex;
+     }else if(container[0].id === knowledge){
+         knowledgeRating = elementIndex;
+     }
             // add the hover classes
             var i = 0;
             $.each($(container).children(settings.starsSelector).children(settings.starSelector), function(index, element) {
@@ -82,6 +89,8 @@ jQuery.fn.ratingStars = function( options ) {
         onStarSelected: function(starElement, container) {
             var me = this;
             var elementIndex = $(starElement).index();
+            console.log(container[0].id);
+            console.log(elementIndex);
     
             // remove the currently selected class
             $(container).children(settings.starsSelector).children(settings.starSelector).removeClass(settings.selectors.starActiveClass);
