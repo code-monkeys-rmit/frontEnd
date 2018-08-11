@@ -30,10 +30,10 @@ $(document).ready(()=>{
 	$('#search').click(()=>{
 	    let popUp = "<div class='popup'><h2 id='statusText'>Searching for your tutor</h2><div class='loader'>Loading...</div></div>";
 		$('#contentWrapper').append(popUp);
-		$.post('/api/create_session',($('#userform').serialize() + '&student_id=3'),(data)=>{
-            let parseData = JSON.parse(JSON.stringify(data));
+		$.post('http://localhost:3000/api/create_session',($('#userform').serialize() + '&student_id=3'),(data)=>{
+            let parseData = JSON.stringify(data);
 			$('#statusText').html('Tutor Found!<br>Redirecting...');
-			createCookie('tutorLink', parseData.toString());
+			createCookie('tutorLink', parseData);
 			setTimeout(()=>{document.location.replace('/match/match.html') }, 3000);
 		},'jsonp')
 	});
