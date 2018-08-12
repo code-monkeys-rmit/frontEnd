@@ -348,7 +348,9 @@ article img{
     background-color: whitesmoke;
 }
 
-
+.finalBody{
+    background-color: whitesmoke;
+}
 
 /*.rounded img{
     border-radius: 50%;
@@ -442,5 +444,9 @@ a:focus {
 #divProfile{
   margin-top: 80px;
   margin-right: 0px;
+}
+#profPic{
+    height: 20vw;
+    width: 20vw;
 }
 

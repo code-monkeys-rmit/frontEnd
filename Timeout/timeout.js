@@ -1,9 +1,7 @@
 $(document).ready(()=>{
     
     footerAlign();
-    setTimeout(()=>{
-        document.location.replace('../index.html');
-    },2000);
+    
     
 });
 

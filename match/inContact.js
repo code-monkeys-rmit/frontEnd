@@ -24,7 +24,6 @@ $(document).ready(()=>{
 	let name = cook.tutor.user.name;
 	let skype_id = 'abir.ishtiaque';
 	let sessionID = cook.chat_session.id;
-	$('#userName').html(name);
 	$('#skypeCall').data('contact-id',skype_id);
     $('#done').click(()=>{
         $.post('http://backend-dev.ap-southeast-2.elasticbeanstalk.com/api/end_session','id='+sessionID,(data)=>{
